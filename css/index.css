@@ -144,4 +144,8 @@
 #quick-menu .mobile:hover .qr-code{
     display: block;
 }
+
+#submenu li{
+    width: 120px;
+}
 /* header结束 */
