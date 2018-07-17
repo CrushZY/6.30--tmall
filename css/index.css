@@ -129,6 +129,7 @@
     background: #fff;
     box-shadow: 0 0 5px #aaa;
     display: none;
+    z-index: 2;
 }
 
 #quick-menu .qr-code::after{
@@ -267,6 +268,92 @@
     background-color: #ff0036;
 }
 /*main-nav结束*/
+
+/*side-bar开始*/
+#side-bar{
+    width: 35px;
+    background: #cccccc;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+#side-bar .icon-tianmaoxingxiang2{
+    margin-top: 140px;
+    display: block;
+    font-size:12px;
+    width: 25px;
+    cursor: pointer;
+
+}
+#side-bar .side-bar-tab{
+    position: relative;
+}
+#side-bar .vip{
+    width: 90px;
+    height: 35px;
+    background-color: #FF0036;
+    color: #ffffff;
+    position: absolute;
+    left: -150px;
+    top: 0;
+    text-align: center;
+    line-height: 35px;
+    font-size: 12px;
+    opacity: 0;
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+#side-bar .vip::after{
+    content: '';
+    border-style: solid;
+    border-width: 4px;
+    border-color: transparent transparent transparent #FF0036;
+    height: 0;
+    width: 0;
+    position: absolute;
+    right: -8px;
+    top: 14px;
+}
+#side-bar .side-bar-tab:hover .vip{
+    opacity: 1;
+    left: -90px;
+}
+#side-bar .side-bar-gouwuche{
+    margin-top: 35px;
+    position: absolute;
+    text-align: center;
+    margin-left: 3px;
+    border-style: solid;
+    border-width: 1px;
+    width: 25px;
+    font-size: 14px;
+    height: 100px;
+    cursor: pointer;
+    border-color:#000000 transparent #000000 transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*side-bar结束*/
 
 
 
